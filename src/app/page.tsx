@@ -29,7 +29,7 @@ export default function Home() {
           <div className="flex space-x-4 items-center">
             <Link href="https://x.com/Dream_Stream_23" target="_blank">
               <Image
-                src="/images/vector.png"
+                src="/images/Vector.png"
                 alt="X"
                 width={18}
                 height={16}
@@ -77,7 +77,7 @@ export default function Home() {
       </div>
       <div className="absolute top-[80%] 2xl:top-[70%] left-0 w-full  lg:h-[966px] z-30 pointer-events-none overflow-visible">
         <div
-          className="w-full min-h-screen lg:h-[966px] 2xl:h-[1500px] bg-cover bg-no-repeat pointer-events-auto "
+          className="w-full min-h-screen lg:h-[966px] 2xl:h-[1250px] bg-cover bg-no-repeat pointer-events-auto "
           style={{
             backgroundImage: "url('/images/vector-1.png')",
             backgroundPosition: "top center",
