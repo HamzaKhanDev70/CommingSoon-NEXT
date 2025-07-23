@@ -9,9 +9,14 @@ const ContentSection = () => {
   const [loading, setLoading] = useState(false);
   const [successMsg, setSuccessMsg] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
-
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
+
+  if (!emailRegex.test(email)) {
+    setErrorMsg("Please enter a valid email address.");
+    return;
+  }
     setLoading(true);
     setSuccessMsg("");
     setErrorMsg("");
@@ -58,7 +63,7 @@ const ContentSection = () => {
 
   return (
     <div className=" w-full  px-4  relative z-10">
-      <div className="relative top-[10%] xl:top-[5%] left-[10%] w-[70vw] max-w-[1600px] aspect-[3/2] z-10 pointer-events-none">
+      <div className="relative top-[10%] xl:top-[5%] left-[15%] w-[70vw] max-w-[1600px] aspect-[3/2] z-10 pointer-events-none">
         <div className="relative w-full h-full">
           <Image
             src="/images/yellow-rect.png"
@@ -81,7 +86,7 @@ const ContentSection = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-8 md:px-12 flex flex-col items-center justify-center ">
+      <div className="max-w-7xl mx-auto px-8 md:px-7 flex flex-col items-center justify-center ">
         <h1 className="heading-m md:heading-l font-bold mb-6 md:mb-10 uppercase">
           <span className="text-[#FEE300]">coming soon</span>
           <br className="md:hidden" />
@@ -106,29 +111,29 @@ const ContentSection = () => {
         <CountdownTimer />
 
         <form
-          onSubmit={handleSubmit}
-          className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 px-4 py-2"
-        >
-          <div className="relative">
-            <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-white" />
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email..."
-              required
-              className="bg-gray-700 outline-none pl-10 pr-4 py-3 text-sm text-white placeholder-gray-400 w-64 rounded-lg"
-            />
-          </div>
+      onSubmit={handleSubmit}
+      className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 px-4 py-2"
+    >
+      <div className="relative">
+        <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-white" />
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your email..."
+          required
+          className="bg-gray-700 outline-none pl-10 pr-4 py-3 text-sm text-white placeholder-gray-400 w-64 rounded-lg"
+        />
+      </div>
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="bg-blue-600 text-white px-4 py-3 text-sm hover:bg-blue-700 transition rounded-lg"
-          >
-            {loading ? "Sending..." : "Keep me updated"}
-          </button>
-        </form>
+      <button
+        type="submit"
+        disabled={loading}
+        className="bg-blue-600 text-white px-4 py-3 text-sm hover:bg-blue-700 transition rounded-lg"
+      >
+        {loading ? "Sending..." : "Keep me updated"}
+      </button>
+    </form>
         {successMsg && (
           <p className="text-yellow-400 text-sm mt-2  ">{successMsg}</p>
         )}

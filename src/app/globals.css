@@ -138,14 +138,14 @@ body {
 
   @utility heading-xl {
     font-family: "Right Grotesk", sans-serif;
-    /* font-weight: 900;  */
+    font-weight: 900; 
     font-size: 72px;
     line-height: 1.4;
     /* color: #ffffff; */
   }
   @utility heading-l {
-    font-family: "Right Grotesk", sans-serif;
-    /* font-weight: 900; */
+    font-family: "Right Grotesk", ;
+    font-weight: 800;
     font-size: 56px;
     line-height: 1.2;
     /* color: #ffffff;  */
@@ -174,9 +174,9 @@ body {
 }
 @utility body-normal {
   font-family: "Inter", sans-serif;
-  /* font-weight: 400; */
-  font-size: 16px;
-  line-height: 1.6;
+  font-weight: 400;
+  font-size: 20px;
+  /* line-height: 48px; */
   /* color: #ffffff; */
 }
   /*  */
