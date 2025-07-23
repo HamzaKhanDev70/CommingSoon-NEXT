@@ -30,7 +30,7 @@
     @apply min-h-screen antialiased;
     background: var(--background);
     color: var(--foreground);
-    font-family: 'Right Grotesk', 'Inter', sans-serif;
+    font-family:  'Inter', sans-serif;
   }
 }
 
