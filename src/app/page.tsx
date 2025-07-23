@@ -210,7 +210,7 @@ export default function Home() {
 
       {/* Gradient overlay over the background */}
       <div
-        className="absolute top-[40%] left-0 w-full min-h-screen h-[1200px] z-10 pointer-events-none"
+        className="absolute top-[40%] left-0 w-full min-h-screen h-[1400px] z-10 pointer-events-none"
         style={{
           backgroundImage: "linear-gradient(180deg, #4A1D00 -4.88%, #000000 100%)",
           clipPath: "polygon(0 20%, 100% 0, 100% 100%, 0% 100%)",
