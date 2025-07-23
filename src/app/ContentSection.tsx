@@ -129,7 +129,7 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       <button
         type="submit"
         disabled={loading}
-        className="bg-blue-600 text-white px-4 py-3 text-sm hover:bg-blue-700 transition rounded-lg"
+        className="bg-blue-600 text-white px-4 py-3 text-sm hover:bg-blue-700 transition rounded-lg uppercase"
       >
         {loading ? "Sending..." : "Keep me updated"}
       </button>
