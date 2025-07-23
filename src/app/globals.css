@@ -144,7 +144,7 @@ body {
     /* color: #ffffff; */
   }
   @utility heading-l {
-    font-family: "Right Grotesk", ;
+    font-family: "Right Grotesk",sans-serif ;
     font-weight: 800;
     font-size: 56px;
     line-height: 1.2;
