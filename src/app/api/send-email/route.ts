@@ -1,4 +1,3 @@
-// src/app/api/send-email/route.ts
 
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 import { NextResponse } from "next/server";

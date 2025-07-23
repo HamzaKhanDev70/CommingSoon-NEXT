@@ -105,21 +105,6 @@ const ContentSection = () => {
         </p>
         <CountdownTimer />
 
-        {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 px-4 py-2">
-            <div className="relative">
-              <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-white" />
-              <input
-                type="email"
-                placeholder="Enter your email..."
-                className="bg-gray-700 outline-none pl-10 pr-4 py-3 text-sm text-white placeholder-gray-400 w-64 rounded-lg "
-              />
-            </div>
-
-            <button className="bg-blue-600 text-white px-4 py-3 text-sm  hover:bg-blue-700 transition rounded-lg">
-              Keep me updated
-            </button>
-          </div> */}
-
         <form
           onSubmit={handleSubmit}
           className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 px-4 py-2"

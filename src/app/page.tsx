@@ -131,7 +131,7 @@ export default function Home() {
             height={60}
             className="object-contain h-[55px] w-[55px] md:h-[75px] md:w-[75px]"
           />
-          <div className="flex space-x-3 items-center">
+          <div className="flex space-x-7 items-center">
             <Link href="https://x.com/Dream_Stream_23" target="_blank">
               <Image
                 src="/images/Vector.png"
