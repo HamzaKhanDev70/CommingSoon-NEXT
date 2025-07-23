@@ -87,16 +87,16 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-8 md:px-7 flex flex-col items-center justify-center ">
-        <h1 className="heading-m md:heading-l font-bold mb-6 md:mb-10 uppercase">
+        <h1 className="heading-hero text-white mb-6 md:mb-10 ">
           <span className="text-[#FEE300]">coming soon</span>
           <br className="md:hidden" />
           <span className="text-pink-500"> exclusively for you.</span>
         </h1>
-        <p className="body-normal mb-8 leading-relaxed">
+        <p className="paragraph-hero mb-8 leading-relaxed">
           Welcome to DreamStream{" "}
           <span className="text-blue-700 ">Magic in Motion</span>
         </p>
-        <p className="body-normal mb-8 leading-relaxed">
+        <p className="paragraph-hero mb-8 leading-relaxed">
           Get ready to experience seamless entertainment and essential services
           like never before. DreamStream is a next-generation platform designed
           for passengers across various modes of transport. Whether you're
@@ -104,7 +104,7 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           access to entertainment, real-time information, and essential
           services.
         </p>
-        <p className="text-[#FEE300] body-normal mb-8 leading-relaxed">
+        <p className="text-[#FEE300] paragraph-hero mb-8 leading-relaxed">
           Stay connected and enjoy a passenger-centric experience that puts
           freedom of choice at your fingertips – even when you’re offline.
         </p>
