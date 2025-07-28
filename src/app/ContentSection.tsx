@@ -77,7 +77,7 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         <div className="absolute top-[48%] left-[6%] -translate-y-1/2 z-10 w-[80%] max-w-[1200px] aspect-[3/2]">
           <div className="relative w-full h-full">
             <Image
-              src="/images/soon-listen.png"
+              src="/images/listen-pink.png"
               alt="Coming soon text"
               fill
               className="object-contain"
@@ -120,16 +120,16 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter your email..."
+          placeholder="Enter your email address..."
           required
-          className="bg-gray-700 outline-none pl-10 pr-4 py-3 text-sm text-white placeholder-gray-400 w-64 rounded-lg"
+          className="bg-[#2F2F2F] outline-none pl-10 pr-4 py-3 text-sm text-white placeholder-gray-400 w-84 rounded-lg"
         />
       </div>
 
       <button
         type="submit"
         disabled={loading}
-        className="bg-blue-600 text-white px-4 py-3 text-sm hover:bg-blue-700 transition rounded-lg uppercase"
+        className="bg-[#049BFE] text-white px-4 py-3 text-sm hover:bg-blue-700 transition rounded-lg uppercase"
       >
         {loading ? "Sending..." : "Keep me updated"}
       </button>
