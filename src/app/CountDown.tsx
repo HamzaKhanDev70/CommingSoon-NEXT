@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 const CountdownTimer: React.FC = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2025-08-22T00:00:00"); // Adjust target date
+    const targetDate = new Date("2025-08-22T00:00:00"); 
     const now = new Date();
     const diff = targetDate.getTime() - now.getTime();
 
@@ -39,19 +39,14 @@ const CountdownTimer: React.FC = () => {
 
   return (
     <div className="flex space-x-4 text-center justify-center">
-      {/* Days */}
       <div className="flex flex-col items-center">
         <div className="flex ">{renderDigits(timeLeft.days)}</div>
         <span className="text-white text-lg mt-2 tracking-widest">DAYS</span>
       </div>
-
-      {/* Hours */}
       <div className="flex flex-col items-center">
         <div className="flex">{renderDigits(timeLeft.hours)}</div>
         <span className="text-white text-lg mt-2 tracking-widest">HOURS</span>
       </div>
-
-      {/* Minutes */}
       <div className="flex flex-col items-center">
         <div className="flex">{renderDigits(timeLeft.minutes)}</div>
         <span className="text-white text-lg mt-2 tracking-widest">MINUTES</span>
